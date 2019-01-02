@@ -1,50 +1,31 @@
 {
-  "name": "tony",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "./node_modules/.bin/webpack --mode production",
-    "test": "jest",
-    "coverage": "yarn test --coverage",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
-  },
-  "repository": "https://github.com/charisschomba/Frontend-React.git",
-  "author": "Chariss Chomba",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "7",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "react-router-dom": "^4.3.1",
-    "semantic-ui-react": "^0.83.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
-  },
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1",
+    "@coreui/coreui": "^2.1.4",
     "bootstrap": "^4.1.3",
-    "coveralls": "^3.0.2",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-15": "^1.2.0",
-    "enzyme-adapter-react-16": "^1.7.0",
-    "jest": "^23.6.0",
-    "react": "^16.6.3",
-    "react-app-polyfill": "^0.1.3",
-    "react-dev-utils": "^6.1.1",
-    "react-dom": "^16.6.3",
-    "react-redux": "^5.1.1",
+    "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.7.0",
+    "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.6.3",
-    "redux": "^4.0.1",
-    "redux-logger": "^3.0.6",
-    "redux-promise": "^0.6.0",
-    "resolve": "1.8.1"
-  }
+    "react-scripts": "2.1.2",
+    "reactstrap": "^7.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
