@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Data extends Component{ 
 
@@ -23,7 +24,7 @@ class Data extends Component{
   render() { 
       return (
           <div className="outer">
-          <h1 className="banner2"> This is a smart Component, here's some data it fetches. Click <a className="link2" href="/">here</a>  to go back.</h1>
+          <h1 className="banner2"> This is a smart Component, here's some data it fetches. Click <Link to="/" className="link2">here</Link>  to go back.</h1>
           <div className="data">
     <ul>
 
